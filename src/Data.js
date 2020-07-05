@@ -13,9 +13,9 @@ const Data = () => {
   console.log(details);
 
   return (
-    <div>
+    <>
       <h1>{details.title}</h1>
-    </div>
+    </>
   );
 };
 

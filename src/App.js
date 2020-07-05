@@ -6,11 +6,11 @@ const Data = lazy(() => import("./Data"));
 
 function App() {
   return (
-    <div>
+    <>
       <Suspense fallback={<Loading />}>
         <Data />
       </Suspense>
-    </div>
+    </>
   );
 }
 
