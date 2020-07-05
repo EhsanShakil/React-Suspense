@@ -5,12 +5,10 @@ const Data = () => {
   let [details, setDetails] = useState([]);
 
   useEffect(() => {
-    setTimeout(() => {
-      let fetch = async () => {
-        setDetails(await Fetchapi());
-      };
-      fetch();
-    }, 1000);
+    let fetch = async () => {
+      setDetails(await Fetchapi());
+    };
+    fetch();
   }, []);
   console.log(details);
 
